@@ -27,7 +27,7 @@ $list = $data['records'];
 				<input type="submit" name="submit" value="Search">
 		</form>
 		
-		<a href="form.php" style="text-decoration: none">
+		<a href="?p=add" style="text-decoration: none">
 			<input type="button" value="ADD">
 		</a>
 		
@@ -36,7 +36,7 @@ $list = $data['records'];
 			<?php foreach($list as $item) { ?>
 				<tr>
 					<td>
-						<a href="preview.php?id=<?php echo $item['id']?>"><?php echo $item['name'] ?></a>
+						<a href="?p=preview&id=<?php echo $item['id']?>"><?php echo $item['name'] ?></a>
 					</td>
 					<td><?php echo $item['price'] ?></td>
 					<td><?php echo $item['description'] ?></td>
