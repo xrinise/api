@@ -7,7 +7,7 @@ $data = json_decode($json, true);
 ?>
 
 <link rel="stylesheet" href="style.css">
-<a href="./form.php?id=<?php echo $id ?>"> 
+<a href="?p=add&id=<?php echo $id ?>"> 
 	<button type="button">Edit</button>
 </a> | 
 <form style="display: inline-block" method="post" action="delete.php">
